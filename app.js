@@ -33,6 +33,8 @@ io.sockets.on('connection', (client)=> {
     console.log('Socket connected!');
 
     client.on('devicemove', (data)=> {
+        console.log('Device move!');
+        console.log(data);
         client.broadcast.emit('movesquare', data);
 
         // client.on('changeImage')
