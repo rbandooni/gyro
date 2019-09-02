@@ -2,3 +2,23 @@
     padding: 0;
     margin: 0;
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+#container {
+
+
+    img {
+        border-radius: 50%;
+        box-shadow: 2px 5px 12px #2d2d2d;
+        transition: box-shadow 0.2s ease-out;
+
+        &:hover {
+            box-shadow: 1px 3px 5px #2d2d2d;
+        }
+     }
+    }
+}

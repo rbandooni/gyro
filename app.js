@@ -8,6 +8,7 @@ var path = require('path');
 
 app.set('views', __dirname +'/views');
 app.use(express.static('views'))
+app.use('/scripts', express.static(__dirname + '/node_modules/socket.io-client/dist'));
 // app.use(app.router);
 
 app.get('/', (req, res) => {
